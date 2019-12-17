@@ -55,3 +55,8 @@ export const updateDot = (item: DotType) => ({
   type: UPDATE_DOT,
   payload: item
 })
+
+export const removeDot = (id: number) => ({
+  type: REMOVE_DOT,
+  payload: id
+})

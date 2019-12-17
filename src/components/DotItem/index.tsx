@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { DotType, REMOVE_DOT } from '../../actions/form';
+import { DotType, removeDot } from '../../actions/form';
 
 interface DotItemProps {
   item: DotType,
@@ -11,7 +11,7 @@ const DotItem: React.FC<DotItemProps> = ({ item }) => {
   const dispatch = useDispatch();
 
   const removeHandler = useCallback(() => {
-    dispatch({ type: REMOVE_DOT, payload: id });
+    dispatch(removeDot(id));
   }, [dispatch, id])
 
   const buttonStyles = {
