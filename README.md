@@ -9,3 +9,11 @@ Test project with React + hooks, Redux, TypeScript
 5. `npm start`
 6. Open `http://localhost:3000` in browser
 7. For run tests use `npm test`
+
+
+## How use
+
+1. Enter test in text field end press `Enter`
+2. A point will be added to the center of the map.
+3. Add some points changing the position of the map.
+4. A line connecting the dots will be drawn on the map. When moving points on the map or in the list, the line will be updated.
